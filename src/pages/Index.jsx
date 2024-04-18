@@ -37,7 +37,7 @@ const Index = () => {
         <FormLabel>Phone Number</FormLabel>
         <Input type="tel" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} placeholder="Enter your phone number" />
       </FormControl>
-      <Button colorScheme="blue" onClick={handleSubmit}>
+      <Button colorScheme="red" onClick={handleSubmit}>
         Submit
       </Button>
 
