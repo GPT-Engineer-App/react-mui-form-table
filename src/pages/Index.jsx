@@ -37,12 +37,12 @@ const Index = () => {
         <FormLabel>Phone Number</FormLabel>
         <Input type="tel" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} placeholder="Enter your phone number" />
       </FormControl>
-      <Button colorScheme="red" onClick={handleSubmit}>
+      <Button colorScheme="red" aria-label="Submit form" onClick={handleSubmit}>
         Submit
       </Button>
 
       {submissions.length > 0 && (
-        <Box w="full">
+        <Box w="full" aria-live="polite">
           <Text fontSize="xl" mt={6} mb={4}>
             Submissions
           </Text>
